@@ -1,9 +1,11 @@
 #tries{
      color: blue;
+     font-weight: bold;
 }
 
 #distance{
     color: crimson;
+    font-weight: bold;
 }
 
 #main{
