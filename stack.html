@@ -62,7 +62,7 @@
 		</p>
 		<button class="btn btn-info" onclick="Stack()"><b>Push Value</b></button>
         <button class="btn btn-primary" onclick="Popitem()"><b>Pop Value</b></button>
-        <button class="btn btn-warning" onclick="Zap()"><b>Zap Value</b></button>
+        <button class="btn btn-warning" onclick="Zapvalues()"><b>Zap Value</b></button>
 	
 	
 </body>
@@ -79,5 +79,30 @@
 		document.getElementById('target').appendChild(element)
 		
 	}
+
+  function Popitem(){
+      var stackItems = document.getElementsByClassName("stack")
+      if(stackItems.length>0){
+        stackItems[stackItems.length-1].remove()
+      }
+      console.log(stackItems)
+      console.log(stackItems.length)
+      console.log(stackItems.length-1)
+  }
+
+  function Zapvalues(){
+    var stackItems = document.getElementsByClassName("stack")
+     var input = document.getElementById("input1").value
+     console.log(stackItems)
+     console.log(input)
+     for(var i=0;i<stackItems.length;i++){
+       if(stackItems[i]==input){
+         stackItems[stackItems[i]].remove()
+
+       }
+     }
+     console.log("We are getting rid of all elements with " + input + "'")
+  }
 </script>
 </html>	
+
