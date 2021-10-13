@@ -11,3 +11,17 @@
 #main{
     color: darkmagenta;
 }
+
+#target{
+    color: brown;
+    font-weight: bold;
+}
+
+#countdown{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+#btn1, #btn2{
+    font-weight: bold;
+}
